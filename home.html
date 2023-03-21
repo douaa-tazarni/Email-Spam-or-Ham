@@ -1,0 +1,234 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spam or Ham</title>
+<!-- anime css -->
+<link rel="stylesheet" href="{% static "assets/css/animate.css" %}">
+<!-- tiny slider css -->
+<link rel="stylesheet" href="{% static "assets/css/tiny-slider.css" %}">
+<!-- font awsome css -->
+<link rel="stylesheet" href="{% static "assets/css/all.css" %}">
+<!-- venobox css -->
+<link rel="stylesheet" href="{% static "assets/css/venobox.css" %}" type="text/css" media="screen" />
+<!-- Bootstrap css -->
+<link rel="stylesheet" href="{% static "assets/css/bootstrap.min.css" %}">
+<!-- default css -->
+<link rel="stylesheet" href="{% static "assets/css/default.css" %}">
+<!-- style css -->
+<link rel="stylesheet" href="{% static "assets/css/style.css" %}">
+</head>
+<body>
+    <!--Header Start-->
+    <header class="header-area">
+        <div class="navbar-area">
+          <!---- navbar start--->
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/template/index.html">
+                  <img class="image" src="{% static "assets/img/spamapp.png" %}" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-scroll-nav="0" aria-current="page" href="{% url 'project:home' %}">Home</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                      <a class="nav-link" data-scroll-nav="1" href="#about-area">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" data-scroll-nav="2" href="{% url 'project:index' %}">Execution</a>
+                    </li>
+    
+    
+                  </ul>
+    
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!---- navbar end--->
+        <div class="header-hero" data-scroll-index="0">
+          <!---- home start ------>
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+          <div class="shape shape-5"></div>
+          <div class="shape shape-6"></div>
+          <div class="container ">
+            <div class="row align-items-center justify-content-center ">
+              <div class="col-lg-6 col-md-10">
+                <div class="header-hero-content">
+                  <h1 class="header-title wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.2s"><span>Let's Get </span> Started</h1>
+                  <h6 class="text wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.4s">Filtering your emails based on machine learning.<br>
+                    Secure your emails list by using Ham or Spam.</h6>
+                  <ul class="d-flex">
+                    <li><a href="{% url 'project:index' %}" class="main-btn wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.8s">EXECUTE
+                        NOW</a></li>
+                    <!--<li><a href="#" class="header-video venobox wow fadeInLeftBig"
+                        data-autoplay="true" data-vbtype="video" data-wow-duration="3s" data-wow-delay="1.2s"><i
+                          class="fas fa-play"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="header-image">
+                  <img src="{% static "assets/img/EMAILSPAM.png" %}" alt="" class="image-1  wow fadeInRightBig"
+                    data-wow-duration="3s" data-wow-delay="0.5s">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---- home end ------>
+    </header>
+    <!--Header End-->
+
+    <!--Models section start-->
+    <section class="feature-section pt-80" data-scroll-index="1">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-7">
+            <div class="section-title text-center mb-30">
+              <h1 class="mb-25  wow fadeInUp" data-wow-delay=".2s">Models <span> Used</span></h1>
+              <!--<p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis error enim perspiciatis iste dignissimos tempore?</p>-->
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
+              <div class="icon color-1">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="content">
+                <h3>Naive Bayes</h3>
+                <p>Naive Bayes is a classification technique based on Bayes’ Theorem with. A a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.4s">
+              <div class="icon color-2">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="content">
+                <h3>K-Nearest Neighbor</h3>
+                <p>The KNN algorithm is a simple, supervised machine learning algorithm that can be used to solve both classification and regression problems. It’s easy to implement and understand but has a problem of becoming significantly slower as the size of the data in use grows.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.6s">
+              <div class="icon color-3">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="content">
+                <h3>Logistic Regression</h3>
+                <p>Logistic regression is a statistical analysis method to predict a binary outcome, such as yes or no, based on prior observations of a data set. A logistic regression model predicts a dependent data variable by analyzing the relationship between one or more existing independent variables.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.2s">
+              <div class="icon color-4">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="content">
+                <h3>Support Vector Machine</h3>
+                <p>SVM is a supervised machine learning model that uses classification algorithms for two-group classification problems. After giving an SVM model sets of labeled training data for each category, they’re able to categorize new text.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.4s">
+              <div class="icon color-5">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="content">
+                <h3>Random Forest</h3>
+                <p>Random forests or random decision forests is an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. For classification tasks, the output of the random forest is the class selected by most trees.</p>
+              </div>
+            </div>
+          <!--</div>
+          <div class="col-lg-4">
+            <div class="single-feature wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.6s">
+              <div class="icon color-6">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="content">
+                <h3>LR</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus sequi pariatur qui ut dolore excepturi!
+                </p>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+    <!--Models section end-->
+
+    <!-- About Section Start -->
+  <section class="about-area pt-70 pb-120 " id="about-area" data-scroll-index="2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="about-image wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.5s">
+            <div class="about-shape"></div>
+            <img src=" {% static "assets/img/web email.png" %}" alt="" class="app">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="3s" data-wow-delay="0.5s">
+            <div class="section-title">
+              <h1 class="title">About the application</h1>
+              <h6 class="text">In this application, a new approach based on the strategy that how frequently words are repeated was used (common words). The key sentences, those with specific keywords -of the incoming emails- have to be mentioned and determined, finally they will be put together in a vector in order to define how rare a keyword, and by a consequence to determine which category the email belongs to, Spam or Ham.</h6>
+            </div>
+            <a href="{% url 'project:index' %}" class="main-btn">EXECUTE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+
+
+
+
+
+    <!--Jquery JS-->
+    <script src="{% static "Assets/js/jquery-1.12.4.min.js" %}"></script>
+    <!-- venobox js -->
+  <script type="text/javascript" src="{% static "assets/js/venobox.min.js" %}"></script>
+   <!-- wow js -->
+   <script src="{% static "assets/js/wow.min.js" %}"></script>
+    <!--font Awsome JS -->
+  <script src="{% static "assets/js/all.js" %}"></script>
+    <!--Bootstrap JS-->
+    <script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+    <!--main JS-->
+    <script src="{% static "assets/js/main.js" %}"></script>
+
+</body>
+</html>
